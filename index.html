@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+  
+<body id="body">
+
+  <section class="hero is-success">
+
+    <div class="hero-body">
+      <div class="container has-text-centered">
+        <p class="title">
+          Hackathon Finder
+        </p>
+        <p id="hackathonAmount"class="subtitle">
+          
+        </p>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Nav Bar for sorting-->
+
+  <nav class="navbar" role="navigation" aria-label="main navigation">
+    <div id="navbar" class="navbar-menu">
+      <div class="navbar-start">
+
+        <!-- add style="flex-grow: 1; justify-content: center;" to center navbar-start if needed         -->
+
+        <!-- Status -->
+
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link">
+            Status
+          </a>
+
+          <div class="navbar-dropdown">
+            <a class="navbar-item option0">
+              Currently running
+            </a>
+            <a class="navbar-item option0">
+              Not started
+            </a>
+          </div>
+        </div>
+
+        <!-- Starts In 24 hours-->
+
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link">
+            Starts In 24 hours
+          </a>
+
+          <div class="navbar-dropdown">
+            <a class="navbar-item option1">
+              Yes
+            </a>
+            <a class="navbar-item option1">
+              No
+            </a>
+          </div>
+        </div>
+
+        <!-- Sites -->
+        <!--          CodeForces, CodeForces::Gym, TopCoder, AtCoder, CS Academy, CodeChef, HackerRank, HackerEarth, Kick Start, LeetCode, Toph, -->
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link">
+            From Site:
+          </a>
+
+          <div id="siteHolder"class="navbar-dropdown">
+
+          </div>
+        </div>
+
+        <!-- Search Button -->
+
+        <button id="searchButton" class="button is-info">Search
+        </button>
+
+
+
+      </div>
+    </div>
+  </nav>
+
+
+  <section id="errorHolder">
+
+  </section>
+
+  
+  <section id="cardHolder">
+
+  </section>
+  
+  <script src="functions.js"></script>
+  <script src="script.js"></script>
+  
+  <footer class="footer">
+  <div class="content has-text-centered">
+    <p>
+      <strong>Hackathon Finder</strong> made by Chris Suarez and Zack Hassman at Google Computer Science Summer Institute using <a href="https://kontests.net/about" target="_blank">Kontests API</a> and <a href="https://bulma.io/" target="_blank">Bulma CSS Framework</a>.
+    </p>
+  </div>
+</footer>
+  <!--
+  This script places a badge on your repl's full-browser view back to your repl's cover
+  page. Try various colors for the theme: dark, light, red, orange, yellow, lime, green,
+  teal, blue, blurple, magenta, pink!
+  -->
+
+<!--  <script src="https://replit.com/public/js/replit-badge.js" theme="blue" defer></script> -->
+</body>
+
+</html>

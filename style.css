@@ -1,0 +1,40 @@
+html, body {
+  height: 100%;
+  width: 100%;
+  background-color:#e3e3e3
+}
+
+#searchButton{
+  margin-top: 5px;
+}
+
+.centerError {
+  margin: auto;
+  width: 50%;
+  border: 3px solid #990a0a;
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+}
+
+.cardDetail{
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-left: 5px;
+  margin-right: 5px;
+  border: 3px solid #000000;
+}
+
+#cardHolder{
+display: grid;
+grid-template-columns: repeat(auto-fill, minmax(400px,1fr));
+grid-gap: 0.5em;
+}
+
+.zoom {
+  transition: transform .2s; /* Animation */
+}
+
+.zoom:hover {
+  transform: scale(1.5);
+}
